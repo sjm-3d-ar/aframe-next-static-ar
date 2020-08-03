@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A project to test very basic Next.js and A-Frame, with AR.js.",
   "dependencies": {
-    "aframe": "^1.0.4",
     "next": "^9.5.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
