@@ -1,14 +1,6 @@
-## Aframe-next-static-ar
+## next-aframe-image
 
-A project to test very basic Next.js and A-Frame, with AR.js.
-
-
-forked initially from: https://github.com/michaltakac/aframe-next-static
-
-### Libraries
-
-- [A-Frame](https://aframe.io)
-- [Next.js](https://github.com/zeit/next.js)
+A minimalist Next.js project to prototype image tracking with A-Frame and AR.js.
 
 ### Notes
 * ...

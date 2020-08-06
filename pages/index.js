@@ -1,38 +1,48 @@
 import React, { useEffect, useState } from "react";
 import Head from 'next/head'
 
+import BodyPortal from '../src/components/BodyPortal';
+
 const HomePage = () => {
-  const [clientSideRendered, setClientSideRendered] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setClientSideRendered(true);
+    setMounted(true);
   }, []);
 
   return (
     <>
-      {clientSideRendered &&
-        <a-scene
-          vr-mode-ui="enabled: false;"
-          renderer="logarithmicDepthBuffer: true;"
-          embedded
-          arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-        >
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>next-aframe-image</title>
+      </Head>
 
-          <a-nft
-            type="nft"
-            url="https://arjs-cors-proxy.herokuapp.com/https://avo-content-dev.s3.amazonaws.com/campaign-manager/markers/greenlight/greenlight"
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance="0.01"
-            smoothThreshold="5"
+      {mounted && (
+        <BodyPortal>
+          <a-scene
+            vr-mode-ui="enabled: false;"
+            renderer="logarithmicDepthBuffer: true;"
+            embedded
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
           >
-            <a-box position="0 1 0" rotation="0 45 0" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
-          </a-nft>
+            <a-nft
+              type="nft"
+              url="https://arjs-cors-proxy.herokuapp.com/https://avo-content-dev.s3.amazonaws.com/campaign-manager/markers/greenlight/greenlight"
+              smooth="true"
+              smoothCount="10"
+              smoothTolerance="0.01"
+              smoothThreshold="5"
+            >
+              <a-box position="0 0 0" rotation="0 0 0" color="tomato" depth="10" height="10" width="10"></a-box>
+            </a-nft>
 
-          <a-entity camera></a-entity>
-  
-        </a-scene>
-      }
+            <a-entity camera></a-entity>    
+          </a-scene>
+        </BodyPortal>
+      )}
     </>
   );
 };

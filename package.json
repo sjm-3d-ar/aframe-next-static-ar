@@ -1,7 +1,7 @@
 {
-  "name": "aframe-next-static-ar",
+  "name": "next-aframe-image",
   "version": "1.0.0",
-  "description": "A project to test very basic Next.js and A-Frame, with AR.js.",
+  "description": "A minimalist Next.js project to prototype image tracking with A-Frame and AR.js.",
   "dependencies": {
     "next": "^9.5.1",
     "prop-types": "^15.7.2",
@@ -18,8 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaltakac/aframe-next-static.git"
+    "url": "git+https://github.com/sjm-3d-ar/next-aframe-image.git"
   },
-  "author": "Michal Takac <hello@michaltakac.com>",
   "license": "MIT"
 }
