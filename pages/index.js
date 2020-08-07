@@ -30,11 +30,13 @@ const HomePage = () => {
           >
             <a-assets>
               <video
+                id="bgVideo"
                 crossOrigin="anonymous"
+                playsInline
                 autoPlay
                 loop
-                playsInline
-                id="bgVideo"
+                controls
+                controlsList="nodownload"
                 // src="/videos/bg.mp4"
                 src="https://avo-content-dev.s3.amazonaws.com/videos/bg_1588085276090.mp4"
               />
@@ -50,10 +52,10 @@ const HomePage = () => {
             >
               <a-video
                 src="#bgVideo" 
-                position="100 0 -50" 
+                position="50 0 -50" 
                 width="16" 
                 height="9"
-                scale="10 10"
+                scale="5 5"
                 rotation="-90 0 0"
               />
             </a-nft>
