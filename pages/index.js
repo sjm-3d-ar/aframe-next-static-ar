@@ -34,6 +34,7 @@ const HomePage = () => {
                 crossOrigin="anonymous"
                 playsInline
                 autoPlay
+                muted
                 loop
                 controls
                 controlsList="nodownload"
