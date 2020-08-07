@@ -57,6 +57,7 @@ const HomePage = () => {
                 height="9"
                 scale="5 5"
                 rotation="-90 0 0"
+                play="true"
               />
             </a-nft>
 
