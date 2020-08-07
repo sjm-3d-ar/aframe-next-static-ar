@@ -28,6 +28,18 @@ const HomePage = () => {
             embedded
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
           >
+            <a-assets>
+              <video
+                crossOrigin="anonymous"
+                autoPlay
+                loop
+                playsInline
+                id="bgVideo"
+                // src="/videos/bg.mp4"
+                src="https://avo-content-dev.s3.amazonaws.com/videos/bg_1588085276090.mp4"
+              />
+            </a-assets>
+
             <a-nft
               type="nft"
               url="https://arjs-cors-proxy.herokuapp.com/https://avo-content-dev.s3.amazonaws.com/campaign-manager/markers/greenlight/greenlight"
@@ -36,7 +48,14 @@ const HomePage = () => {
               smoothTolerance="0.01"
               smoothThreshold="5"
             >
-              <a-box position="0 0 0" rotation="0 0 0" color="tomato" depth="10" height="10" width="10"></a-box>
+              <a-video
+                src="#bgVideo" 
+                position="100 0 -50" 
+                width="16" 
+                height="9"
+                scale="10 10"
+                rotation="-90 0 0"
+              />
             </a-nft>
 
             <a-entity camera></a-entity>    
