@@ -45,7 +45,8 @@ const HomePage = () => {
 
             <a-nft
               type="nft"
-              url="https://arjs-cors-proxy.herokuapp.com/https://avo-content-dev.s3.amazonaws.com/campaign-manager/markers/greenlight/greenlight"
+              // url="https://arjs-cors-proxy.herokuapp.com/https://avo-content-dev.s3.amazonaws.com/campaign-manager/markers/greenlight/greenlight"
+              url="https://arjs-cors-proxy.herokuapp.com/https://avo-content-dev.s3.amazonaws.com/campaign-manager/markers/abc_dental/abc_dental"
               smooth="true"
               smoothCount="10"
               smoothTolerance="0.01"
